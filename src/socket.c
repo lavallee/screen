@@ -778,7 +778,8 @@ int pid;
     return kill(pid, 0);
   if (UserContext() > 0)
     UserReturn(kill(pid, 0));
-  return UserStatus();
+  //return UserStatus();
+  return 0;
 }
 
 #ifdef hpux
